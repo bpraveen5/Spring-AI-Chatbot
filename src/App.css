@@ -1,0 +1,122 @@
+/* App.css - ChatGPT-like UI */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(13, 11, 11);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  padding-bottom: 5rem; /* Leave space for input box */
+}
+
+h1 {
+  background-color: #d5d5d8;
+  padding: 1rem;
+  border-radius: 8px;
+  position: sticky;
+  text-align: center;
+  margin-top: 1rem;
+  color: #131414;
+  font-size: 1.5rem;
+}
+
+/* Chat Form Fixed at Bottom */
+.chat-form {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  
+  /* border-top: 1px solid #929297; */
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: #303131 0px 0px 3px;
+  background-color: #efeff2;
+  color: rgb(32, 30, 30);
+  font-size: 1rem;
+  border: 1px solid #b2afaf;
+  height: 40px;
+  margin-left: 100px;
+  width: 100%;
+  max-width: 600px;
+  transition: border 0.3s;
+}
+
+.chat-form input::placeholder {
+  color: #aaa;
+}
+
+.chat-form button {
+  background-color: #1f252a;
+  padding: 0 1.25rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  right: 13px;
+  width: 100px;
+  max-width: 100px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  box-shadow: #131414 0px 0px 3px;
+
+}
+
+
+.chat-form button:hover {
+  background-color: #54535e;
+}
+
+/* Chat Area */
+.response-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.response {
+  background-color: #FAFAFA;
+  color: #151917;
+  padding: 1rem;
+  border-radius: 8px;
+  line-height: 1.6;
+  white-space: pre-line;
+  font-size: 1rem;
+  border: 1px solid #cbcaca;
+
+  }
+
+.error {
+  color: #ff5f5f;
+  font-weight: bold;
+  margin-top: 1rem;
+  background-color: #552222;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
