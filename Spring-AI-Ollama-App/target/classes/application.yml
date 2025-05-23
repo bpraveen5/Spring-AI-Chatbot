@@ -1,0 +1,15 @@
+#spring.application.name=Spring-AI-Ollama-App
+#spring:
+#  ai:
+#    ollama:
+#      model: llama3
+#      base-url: http://localhost:11434
+
+#spring.ai.ollama.chat.options.model=deepseek-r1:32b
+
+#spring:
+#  ai:
+#    ollama:
+#      chat:
+#        enabled: true
+#        model: llama3
